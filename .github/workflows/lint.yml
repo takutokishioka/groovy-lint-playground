@@ -28,10 +28,13 @@ jobs:
       run: npm-groovy-lint --format=checkstyle "**/*.groovy" > groovylint.xml || true
 
     - name: Run Reviewdog
-      uses: reviewdog/action-checkstyle@v1
+      uses: reviewdog/action-reviewdog@v1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         reporter: github-pr-check
-        level: error
+        filter_mode: nofilter
+        name: groovylint
         fail_on_error: false
+        level: error
+        format: checkstyle
         input: groovylint.xml
