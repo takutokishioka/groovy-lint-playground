@@ -1,5 +1,3 @@
-class Example {
-    def sayHello() {
-        println 'Hello, World!'
-    }
+def sayHello() {
+    println 'Hello, World!'
 }
