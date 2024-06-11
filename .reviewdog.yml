@@ -1,3 +1,7 @@
 runner:
   npm-groovy-lint:
     cmd: npm-groovy-lint -o log.txt && cat log.txt
+    errorformat:
+      - "%-P%f"
+      - "%l %t %m"
+      - "%-Q"
