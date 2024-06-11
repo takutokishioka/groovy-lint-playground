@@ -1,3 +1,3 @@
-void sayHello() {
+def sayH ello() {
     println 'Hello, World!'
 }
