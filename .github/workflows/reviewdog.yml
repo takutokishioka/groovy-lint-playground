@@ -16,6 +16,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Run npm-groovy-lint
+        run: |
+          npm-groovy-lint -o log.txt || true
+          cat log.txt
+
       - name: Setup Reviewdog
         uses: reviewdog/action-setup@v1
 
