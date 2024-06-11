@@ -3,7 +3,7 @@ runner:
     cmd: npm-groovy-lint -o log.txt && cat log.txt
     errorformat:
       - '%-P%f'
-      - '%*\s%l%*\s%tnfo%*\s%m'
-      - '%*\s%l%*\s%tarning%*\s%m'
       - '%*\s%l%*\s%trror%*\s%m'
+      - '%*\s%l%*\s%tarning%*\s%m'
+      - '%*\s%l%*\s%tnfo%*\s%m'
       - '%-Q'
