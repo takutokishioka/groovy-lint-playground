@@ -8,4 +8,4 @@ runner:
       - '%*\s%l%*\s%terr%*\s%m'
       - '%*\s%l%*\s%twarn%*\s%m'
       - '%-Q'
-    level: warning
+    level: error
