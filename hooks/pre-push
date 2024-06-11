@@ -2,7 +2,7 @@
 
 cd "$(git rev-parse --show-toplevel)"
 
-npm-groovy-lint -o log.txt
+npm-groovy-lint scripts/* -o log.txt
 if [ $? -ne 0 ]; then
   echo "Lint errors found. Please fix them before pushing."
   cat log.txt
