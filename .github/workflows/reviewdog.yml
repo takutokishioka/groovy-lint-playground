@@ -9,14 +9,12 @@ jobs:
     container:
       image: docker://nvuillam/npm-groovy-lint
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-
       - name: Install dependencies
         run: |
           apk add --no-cache curl git
+          
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
       - name: Setup Reviewdog
         uses: reviewdog/action-setup@v1
