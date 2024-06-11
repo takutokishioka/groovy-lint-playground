@@ -1,0 +1,14 @@
+#!/bin/sh
+
+cd "$(git rev-parse --show-toplevel)"
+
+npm-groovy-lint -o log.txt
+if [ $? -ne 0 ]; then
+  echo "Lint errors found. Please fix them before pushing."
+  cat log.txt
+  exit 1
+fi
+
+rm log.txt
+
+exit 0
