@@ -18,7 +18,7 @@ jobs:
 
       - name: Run npm-groovy-lint
         run: |
-          npm-groovy-lint /scripts -o log.txt || true
+          npm-groovy-lint scripts/* -o log.txt || true
           cat log.txt
 
       - name: Setup Reviewdog
