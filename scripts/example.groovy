@@ -1,4 +1,3 @@
-def sayH　ello() {
+def sayHello() {
     println 'Hello, World!'
-    return null
 }

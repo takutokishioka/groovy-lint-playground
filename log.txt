@@ -1,0 +1,5 @@
+/home/takuto/workstation/groovy-lint-playground/scripts/example.groovy
+  1     error    Unexpected character: '　' @ line 1, column 9.  NglParseError           
+
+
+npm-groovy-lint results in 1 linted files:
