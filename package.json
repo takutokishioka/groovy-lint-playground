@@ -1,0 +1,10 @@
+{
+    "name": "groovy-lint-playground",
+    "version": "1.0.0",
+    "scripts": {
+      "lint": "npm-groovy-lint scripts/* -o log.txt && cat log.txt && rm log.txt "
+    },
+    "devDependencies": {
+      "npm-groovy-lint": "^14.6.0"
+    }
+  }
