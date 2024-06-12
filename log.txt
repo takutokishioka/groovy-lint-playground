@@ -1,6 +1,0 @@
-/home/takuto/workstation/groovy-lint-playground/scripts/example.groovy
-  1     info     Method "sayHello" has a dynamic return type  MethodReturnTypeRequired
-  1     info     def for method return type should not be used  NoDef                   
-
-
-npm-groovy-lint results in 1 linted files:
